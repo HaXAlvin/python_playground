@@ -55,7 +55,7 @@ find_turtle_top_down_look_after(turtles)
 print()
 
 
-def find_turtle_top_down_look_after(left_turtle:list):
+def find_turtle_top_down_look_after_sort(left_turtle:list):
     left_turtle.sort(key=lambda x:x[0])
     left_turtle.sort(key=lambda x:x[1])
     weights = []
@@ -69,5 +69,5 @@ def find_turtle_top_down_look_after(left_turtle:list):
             path = path[:fat]+path[fat+1:]
     print("".join(map(str,path)))
 
-find_turtle_top_down_look_after(turtles)
+find_turtle_top_down_look_after_sort(turtles)
 print()
